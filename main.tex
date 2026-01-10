@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Pedro Leite
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Pedro Ivo Santos Leite} \\ \vspace{1pt}
+    \small +55 83-98663-7555 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
+    \href{https://github.com/...}{\underline{github.com/jake}}
+\end{center}
+
+\section*{Professional Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Mester em Ciência da Computação (IA e Machine Learning) com sólida trajetória em TI, especializado no desenvolvimento de soluções inteligentes para o Agronegócio. Expertise na criação de modelos preditivos para pecuária de corte e leite, utilizando técnicas avançadas de Machine Learning, Séries Temporais e análise de dados IoT. Perfil híbrido que combina rigor acadêmico com experiência prática em infraestrutura de sistemas, focado em transformar dados complexos em previsões operacionais de alto valor estratégico para o setor agropecuário.
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Instituto Federal de Campina Grande}{2025 -- Atual}
+    {Master em Inteligência Artificial e Machine Learning}{Campina Grande, PB}
+    \resumeItemListStart
+        \resumeItem{Pesquisa focada em \textbf{Deep Learning aplicado à Fenotipagem Animal} ou \textbf{Séries Temporais para o Agronegócio}.}
+        \resumeItem{Disciplinas: Deep Learning, Estatística Multivariada, Otimização e Processamento de Linguagem Natural.}
+    \resumeItemListEnd
+%\resumeSubHeadingListEnd
+
+%  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidade Federal da Paraiba}{Campina Grande, PB, Brasil}
+      {Bachelor of Arts in Computer Science, Minor in Electronic Engineering}{Jan. 1975 -- Dec 1975}
+    \resumeSubheading
+      {Universidade Federal da Paraiba}{Campina Grande, PB, Brasil}
+      {Post-Graduating in Computer Science }{Jan 1980 -- Dec 1980}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ITFPB - Machine Learning Researcher (Master's)}{2024 -- Present}
+      {Precision Livestock Project}{Campina Grande, Brazil}
+      \resumeItemListStart
+        \resumeItem{Developing \textbf{Time Series Forecasting} models for milk production and cattle weight gain prediction.}
+        \resumeItem{Processing high-volume data from IoT sensors and historical farm records for agribusiness optimization.}
+        \resumeItem{Applying \textbf{Feature Engineering} techniques to biological and climatic variables, including the Temperature Humidity Index (THI).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Intelicampo - Inteligent Farming}{2013 -- Present}
+      {IT Project Manager}{Brazil}
+      \resumeItemListStart
+        \resumeItem{Leading IT initiatives in the \textbf{Agribusiness} sector, focusing on digital transformation and data-driven solutions for farm management.}
+        \resumeItem{Overseeing project lifecycles to integrate technology into agricultural operations, enhancing productivity and operational control.}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Upplify Inc}{2013 -- 2023}
+    %   {IT Project Manager}{Brazil}
+    %   \resumeItemListStart
+    %     \resumeItem{Managed a diverse portfolio of IT projects within the \textbf{Agribusiness} industry for a decade, ensuring alignment between technology and business goals.}
+    %     \resumeItem{Directed cross-functional teams to deliver scalable software solutions and infrastructure improvements.}
+    %   \resumeItemListEnd
+
+    \resumeSubheading
+      {RBC Investor Services - Worldwide Banking}{2007 -- 2013}
+      {Systems Analyst / IT Project Manager}{Canada}
+      \resumeItemListStart
+        \resumeItem{Acted as both Systems Analyst and Project Manager in the \textbf{Financial Services} industry, managing complex systems for international investors.}
+        \resumeItem{Optimized financial software workflows and ensured high availability of mission-critical systems in a global banking environment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Companhia Hidro Elétrica do São Francisco) - Energy Management System}{1978 -- 1999}
+      {IT Systems Developer}{Brazil}
+      \resumeItemListStart
+        \resumeItem{Developed core IT systems for the \textbf{Energy} sector, contributing to the automation and digitalization of large-scale infrastructure.}
+        \resumeItem{Built and maintained software solutions for utility management and operational data processing.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AgroPredict: ML para Desempenho Zootécnico} $|$ \emph{Python, XGBoost, Scikit-learn, Streamlit}}{2024}
+          \resumeItemListStart
+            \resumeItem{Desenvolvimento de modelos de \textbf{Machine Learning} para prever o Ganho de Peso Médio Diário (GMD) em bovinos de corte e a produção diária em sistemas leiteiros.}
+            \resumeItem{Implementei técnicas de \textbf{Feature Engineering} para integrar dados de sensores térmicos (THI) e nutricionais, aumentando a precisão do modelo em 18\% em comparação a métodos estatísticos tradicionais.}
+            \resumeItem{Utilizei \textbf{XGBoost Regressor} com otimização de hiperparâmetros (Bayesian Optimization) para lidar com a sazonalidade e ruídos dos dados de campo.}
+            \resumeItem{Construí um dashboard interativo em \textbf{Streamlit} para visualização de KPIs operacionais e simulações de cenários de produtividade para gestores rurais.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Pipeline de Dados Meteorológicos para IoT} $|$ \emph{Python, FastAPI, PostgreSQL, Docker}}{2024}
+          \resumeItemListStart
+            \resumeItem{Estruturei um sistema de captura automatizada de dados via APIs meteorológicas para enriquecer bases de dados de fazendas parceiras.}
+            \resumeItem{Apliquei conhecimentos de \textbf{Engenharia de Software (TI)} para garantir a escalabilidade do sistema e a integridade dos dados coletados em tempo real.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python (Pandas, Scikit-learn), C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js} \\
+     \textbf{TI/MLOps:} Git} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib} \\
+     \textbf{Agro Context:} Ganho de Peso Médio Diário (GMD), Curvas de Lactação, Análise de Estresse Térmico.}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
