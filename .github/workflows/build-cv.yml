@@ -1,0 +1,38 @@
+name: Build CV PDF
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "**/*.tex"
+      - "**/*.bib"
+      - "**/*.sty"
+      - "**/*.cls"
+      - "**/*.png"
+      - "**/*.jpg"
+      - "**/*.jpeg"
+      - "**/*.pdf"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+
+      - name: Rename PDF to public name
+        run: mv main.pdf CV_Cientista_de_Dados.pdf
+
+      - name: Commit PDF
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "CV_Cientista_de_Dados.pdf"
+          message: "Auto-build CV"
