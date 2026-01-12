@@ -1,86 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Portfólio de Pedro</title>
+  <title>Pedro Leite — Data Scientist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f7f7f7;
       margin: 0;
-      background: #f4f4f9;
-      color: #333;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      margin: 20px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #4CAF50;
-      font-weight: bold;
-    }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
+    .card {
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 480px;
+      width: 90%;
+    }
+    h1 {
+      margin: 0;
+      font-size: 32px;
     }
     h2 {
-      color: #4CAF50;
+      margin-top: 10px;
+      font-weight: 400;
+      color: #666;
+      font-size: 18px;
     }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #333;
+    a.button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: #111;
       color: white;
-      margin-top: 40px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: background 0.2s;
+    }
+    a.button:hover {
+      background: #333;
+    }
+    .links {
+      margin-top: 25px;
+      font-size: 14px;
+    }
+    .links a {
+      margin: 0 10px;
+      color: #555;
+      text-decoration: none;
+    }
+    .links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Portfólio de Pedro</h1>
-    <p>Desenvolvedor apaixonado por tecnologia 🚀</p>
-  </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
-  </nav>
+<div class="card">
+  <h1>Pedro Leite</h1>
+  <h2>Data Scientist & AgriTech Engineer</h2>
 
-  <section id="sobre">
-    <h2>Sobre mim</h2>
-    <p>Sou desenvolvedor focado em criar soluções criativas e eficientes. 
-       Aqui você encontra alguns dos meus projetos pessoais.</p>
-  </section>
+  <a class="button" href="CV_Cientista_de_Dados.pdf">
+    📄 Download CV
+  </a>
 
-  <section id="projetos">
-    <h2>Projetos</h2>
-    <ul>
-      <li><strong>App de Tarefas:</strong> Aplicativo simples para organizar tarefas diárias.</li>
-      <li><strong>Site Responsivo:</strong> Página web adaptável para diferentes dispositivos.</li>
-      <li><strong>Jogo em JavaScript:</strong> Pequeno game para praticar lógica de programação.</li>
-    </ul>
-  </section>
+  <div class="links">
+    <a href="https://github.com/pedroivoleite" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+</div>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Email: <a href="mailto:pedro@email.com">pedro@email.com</a></p>
-    <p>GitHub: <a href="https://github.com/seuusuario" target="_blank">github.com/seuusuario</a></p>
-  </section>
-
-  <footer>
-    <p>© 2026 Pedro - Todos os direitos reservados</p>
-  </footer>
 </body>
 </html>
